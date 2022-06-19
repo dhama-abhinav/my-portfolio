@@ -9,7 +9,9 @@ import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import AWS from '../public/assets/skills/aws.png';
 import Vercel from '../public/assets/skills/vercel.svg';
-import Image from 'next/image';
+import REDUX from '../public/assets/skills/redux.png';
+
+
 
 export const Skills = () => {
   return (
@@ -28,7 +30,7 @@ export const Skills = () => {
             <SkillSets title={"GITHUB"} url={Github}  />
             <SkillSets title={"AWS"} url={AWS}  />
             <SkillSets title={"FIREBASE"} url={Firebase}  />
-            <SkillSets title={"TAILWIND"} url={Tailwind}  />
+            <SkillSets title={"REDUX"} url={REDUX}  />
         </div>
     </div>
   )
