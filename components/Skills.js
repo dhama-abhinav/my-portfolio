@@ -13,8 +13,8 @@ import Image from 'next/image';
 
 export const Skills = () => {
   return (
-    <div className='w-full lg:h-screen p-2'>
-        <div>
+    <div id='skills' className='w-full lg:h-screen p-2'>
+        <div className=''>
             <p className='uppercase text-xl tracking-widest text-[#5651e5]'>Skills</p>
             <h2 className='py-4'>What I can do</h2>
         </div>
