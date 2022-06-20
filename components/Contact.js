@@ -23,10 +23,9 @@ export const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen '>
     <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-      <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+      <p className='text-xl tracking-widest uppercase text-[#473bf3] font-semibold'>
         Contact
       </p>
-      <h2 className='py-4'>Get In Touch</h2>
       <div className='grid lg:grid-cols-5 gap-8'>
         {/* left */}
         <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -34,7 +33,7 @@ export const Contact = () => {
             <div className=''>
               <img
                 className='rounded-xl hover:scale-105 ease-in duration-300'
-                src='https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                src='https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80'
                 alt='/'
               />
             </div>
@@ -51,7 +50,7 @@ export const Contact = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#6c1956] to-[#fed3e6]'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -60,17 +59,17 @@ export const Contact = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#6c1956] to-[#fed3e6]'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
                     <FaGithub />
                   </div>
                 </a>
 
-                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#6c1956] to-[#fed3e6]'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
                   <AiOutlineMail />
                 </div>
                 <Link href='/resume'>
                   <a>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#6c1956] to-[#fed3e6]'>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
                       <BsFillPersonLinesFill />
                     </div>
                   </a>
@@ -81,7 +80,7 @@ export const Contact = () => {
         </div>
 
         {/* right */}
-        <div className=' col-span-3 w-full h-auto shadow-xl bg-gradient-to-r from-[#6c1956] to-[#fed3e6] shadow-gray-400 rounded-xl lg:p-4'>
+        <div className=' col-span-3 w-full h-auto shadow-xl bg-gradient-to-r text-black  shadow-gray-600 rounded-xl lg:p-4'>
           <div className='p-4'>
             <form
               onSubmit={handleSubmit}
@@ -90,9 +89,9 @@ export const Contact = () => {
             >
               <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
-                  <label className='text-white uppercase text-sm py-2'>Name</label>
+                  <label className='text-black font-semibold uppercase text-sm py-2'>Name</label>
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    className='border-2 outline-none rounded-lg p-3 flex border-gray-500'
                     type='text'
                     name='name'
                     value={name}
@@ -100,11 +99,11 @@ export const Contact = () => {
                   />
                 </div>
                 <div className='flex flex-col'>
-                  <label className='text-white uppercase text-sm py-2'>
+                  <label className='text-black font-semibold uppercase text-sm py-2'>
                     Phone Number
                   </label>
                   <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
+                    className='border-2 outline-none rounded-lg p-3 flex border-gray-500'
                     type='text'
                     name='phone'
                     value={phone}
@@ -113,9 +112,9 @@ export const Contact = () => {
                 </div>
               </div>
               <div className='flex flex-col py-2'>
-                <label className='text-white uppercase text-sm py-2'>Email</label>
+                <label className='text-black font-semibold uppercase text-sm py-2'>Email</label>
                 <input
-                  className='border-2 rounded-lg p-3 flex border-gray-300'
+                  className='border-2 outline-none rounded-lg p-3 flex border-gray-500'
                   type='email'
                   name='email'
                   value={email}
@@ -123,9 +122,9 @@ export const Contact = () => {
                 />
               </div>
               <div className='flex flex-col py-2'>
-                <label className=' text-white uppercase text-sm py-2'>Subject</label>
+                <label className=' text-black font-semibold uppercase text-sm py-2'>Subject</label>
                 <input
-                  className='border-2 rounded-lg p-3 flex border-gray-300'
+                  className='border-2 outline-none rounded-lg p-3 flex border-gray-500'
                   type='text'
                   name='subject'
                   value={subject}
@@ -133,16 +132,16 @@ export const Contact = () => {
                 />
               </div>
               <div className='flex flex-col py-2'>
-                <label className='text-white uppercase text-sm py-2'>Message</label>
+                <label className='text-black font-semibold uppercase text-sm py-2'>Message</label>
                 <textarea
-                  className='border-2 rounded-lg p-3 border-gray-300'
+                  className='border-2 outline-none rounded-lg p-3 flex border-gray-500'
                   rows='10'
                   name='message'
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <button className='w-full p-4 text-gray-100 mt-4 bg-gradient-to-r from-[#f025ba] to-[#fa2484]'>
+              <button className='w-full p-4 text-gray-100 mt-4 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
                 Send Message
               </button>
             </form>
@@ -152,7 +151,7 @@ export const Contact = () => {
       <div className='flex justify-center py-12 '>
         <Link href='/'>
           <a>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#6c1956] to-[#fed3e6]'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-gradient-to-r from-[#2c43f4] to-[#b1b1e2]'>
               <HiOutlineChevronDoubleUp
                 className='text-white '
                 size={30}
